@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 
-st.set_page_config(page_title="Raporlar", page_icon=":bar_chart:", layout="wide")  # bulamadım şimdilik
+st.set_page_config(page_title="Raporlar", page_icon=":bar_chart:", layout="wide") 
 
 st.sidebar.header("Sayfa Seçin")  # sidebar ana naşlık
 
@@ -631,4 +631,5 @@ if page == "SINGLE ANALYS":
     st.plotly_chart(fig, use_container_width=True)
 
     # Güncel Fiyat
+
     st.metric("Güncel Fiyat", price_label)
